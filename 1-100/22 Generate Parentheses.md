@@ -22,7 +22,9 @@ For example, given n = 3, a solution set is:
 - 初始条件：建立一个临时变量left,right用来表示**剩余的括号数**
 - 约束条件：
 ① 若left > right，表示左括号数小于右括号数，此时什么都不做
+
 ② 若left > 0,放入一个左括号，并将left-1，用递归实现
+
 ③ 若right > 0 ,放入一个右括号，并将right-1，由于条件①的约束，这里只需要right>0就好了。
 
 ### 源码
