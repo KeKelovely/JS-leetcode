@@ -20,7 +20,7 @@ Output: -1
 2. 这题最简单粗暴的解法就是使用arr.indexOf()方法实现
 
 > 想一想，如果不用indexOf()，要如何实现呢？如何确保在后续遇到已经遍历过的元素时将其忽略掉？
-
+```
 /**
  * @param {string} haystack
  * @param {string} needle
@@ -33,6 +33,7 @@ var strStr = function(haystack, needle) {
             return -1;
         }
 };
+```
 ### 运行时间
 ~~这种实现方法好像也没必要测试时间...~~
 下次写一个原生indexOf实现再来测试一下效果
