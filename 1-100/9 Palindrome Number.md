@@ -1,6 +1,8 @@
 # 9 Palindrome Number
 
 [Palindrome Number-回文数](https://leetcode.com/problems/palindrome-number/description/)
+### 问题描述
+Determine whether an integer is a palindrome. Do this without extra space.
 
 1. 可以使用字符串方法（但本题不允许）
 2. 使用与7 - Reverse Number类似的方法，判断翻转后的数字是否相等
