@@ -48,3 +48,12 @@ var addTwoNumbers = function(l1, l2) {
             return nums;
 };
 ```
+
+### 运行时间
+1562 / 1562 test cases passed.
+
+Status: Accepted
+
+Runtime: 124 ms
+
+Your runtime beats 100.00 % of javascript submissions.
