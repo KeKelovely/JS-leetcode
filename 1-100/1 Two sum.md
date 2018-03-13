@@ -23,3 +23,8 @@ var twoSum = function(nums, target) {
         }
 };
 ```
+### 运行时间
+19 / 19 test cases passed.
+Status: Accepted
+Runtime: 180 ms
+Your runtime beats 60.23 % of javascript submissions.
