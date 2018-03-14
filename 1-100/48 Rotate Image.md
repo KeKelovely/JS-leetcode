@@ -81,3 +81,33 @@ Runtime: 68 ms
 Your runtime beats 52.32 % of javascript submissions.
 
 ~~最快的那位老哥似乎只用了45ms..有待优化~~
+
+### 优化一
+1. 更改旋转矩阵的方式，先求原始矩阵的→ 转置矩阵（即沿着对角线翻转），再沿着中心对称轴翻转（直接将每个数组元素reverse），所得即为目标矩阵
+2. 这样可以将原有的两次双重循环减少为一次。
+3. 目测应该可以用多个单循环来写，就是代码会麻烦点
+```
+/**
+ * @param {number[][]} matrix
+ * @return {void} Do not return anything, modify matrix in-place instead.
+ */
+var rotate = function(matrix) {
+        var m = matrix[0].length, // m表示矩阵的列，即横向长
+            n = matrix.length; // n表示矩阵的行，即纵向长
+        for (var i = 0; i < m; i++){
+            for (var j = i+1; j < m; j++){
+                [ matrix[i][j], matrix[j][i] ] = [ matrix[j][i],matrix[i][j]  ];
+            }
+                matrix[i].reverse();
+        }
+};
+```
+### 运行时间
+
+21 / 21 test cases passed.
+
+Status: Accepted
+
+Runtime: 60 ms
+
+Your runtime beats 79.75 % of javascript submissions.
