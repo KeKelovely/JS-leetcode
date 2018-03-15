@@ -20,15 +20,14 @@ Determine whether an integer is a palindrome. Do this without extra space.
 var isPalindrome = function(x) {
             if (x < 0) {return false;}
             var num = 0,
-                copyx = x;
+                copy_x = x;
             while (x != 0){
                 tail = x % 10;
-                newnum = num * 10 + tail;
-                num = newnum;
+                num = num * 10 + tail;
                 x = (x - tail) / 10;
             }
             num = num|0;
-            return (copyx === num);
+            return (copy_x === num);
 };
 ```
 
