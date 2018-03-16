@@ -25,6 +25,7 @@ The median is (2 + 3)/2 = 2.5
 2. 注意一个陷阱，JavaScript自带的sort()方法并不能对整数进行“正常排序”，因为sort()方法默认是按照字符编码顺序来排，所以10会被放在2前面，导致出错。为了解决
 这一问题，需要我们手动传入compare()函数
 ### 源码实现
+```
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
@@ -49,6 +50,7 @@ var compare = function(num1,num2){
                 return 1;
             }
 }
+```
 ### 运行时间
 
 2080 / 2080 test cases passed.
