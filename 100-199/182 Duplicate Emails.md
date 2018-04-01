@@ -22,3 +22,10 @@ For example, your query should return the following for the above table:
 
 ### 解法描述
 1. 使用mySQL语言实现
+
+### 源码
+```
+# Write your MySQL query statement below
+select distinct p1.email from Person p1, Person p2
+  where p1.email = p2.email and p1.Id != p2.Id
+```
