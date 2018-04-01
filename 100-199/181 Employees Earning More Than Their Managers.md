@@ -23,3 +23,11 @@ Given the Employee table, write a SQL query that finds out employees who earn mo
 
 ### 解法描述
 1. 使用mySQL语言实现
+
+### 源码
+```
+# Write your MySQL query statement below
+SELECT E.Name Employee  
+    FROM Employee E ,Employee M  
+    WHERE E.ManagerId=M.Id AND E.Salary>M.Salary;  
+```
