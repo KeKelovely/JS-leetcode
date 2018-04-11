@@ -1,5 +1,4 @@
 # LeetCode-Solutions
-[简体中文](https://github.com/KeKelovely/LeetCode-Solutions/blob/master/README-CN.md) | [English](https://github.com/KeKelovely/LeetCode-Solutions/blob/master/README-EN.md)
 LeetCode Solutions (all by JavaScript!)
 > [LeetCode](https://leetcode.com/)的个人Solutions汇总，全部使用JavaScript完成
 
