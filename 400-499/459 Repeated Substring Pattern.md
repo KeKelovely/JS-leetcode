@@ -46,3 +46,34 @@ var repeatedSubstringPattern = function(s) {
 ```
 
 ## KMP
+
+参考资料：[字符串匹配的KMP算法](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
+简单来说，即利用KMP算法中的next数组（next数组记录了字符串前缀后缀中最长相同子串的长度），如果一个字符串可以被拆分成多个子字符串的组合，那么其next数组的最后一个数值必定为子字符串长度的倍数。
+例如，对"abab"而言，其next数组为[0,0,1,2]，最后一个数2，必定为子字符串"ab"的长度的2的倍数。即长度为2的字符串出现了两次，那么前后缀中最长相同子串长度为2*(2-1) = 2
+同理，对"abcabcabc"而言,长度为3的子字符串abc出现了三次，那么next数组的最后一个值为3*(3-1) = 6
+总结下来，只要next数组的最后一个数是子字符串长度的倍数（且不能为0），那么这个字符串就一定是我们所求的结果。
+所以，最后这个问题就归结为如何求一个字符串的next数组，具体算法可参考：[KMP算法](https://blog.csdn.net/starstar1992/article/details/54913261/)
+
+### 参考代码
+```
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var repeatedSubstringPattern = function(s) {
+    var m = s.length,
+        i = 1,
+        j = 0,
+        arr = Array.apply(null,Array(m+1)).map(function(item,i){
+            return 0;
+        });
+    while( i < m ){
+        if (s[i] === s[j]) arr[++i] = ++j;
+        else if( j === 0 ) i++;
+        else j = arr[j];
+    }
+    if (arr[m] && arr[m]%(m-arr[m])==0){
+        return true;
+    }else return false;
+};
+```
