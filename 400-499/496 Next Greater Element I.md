@@ -59,7 +59,7 @@ var nextGreaterElement = function(findNums, nums) {
 
 3. 另一种解法比较巧妙，既然nums1是nums2的子集，那不如直接先求nums2中的所有greater number构成的一个哈希表，其中value即对应index的greater number
 4. 这里需要使用到stack栈，将nums2中的元素依次入栈，再判断后入栈的元素是否大于前面的元素，if是，说明找到了更大的数，则前面元素出栈并建立映射
-
+5. 相比前一种解法的复杂度O(m * n)，栈方法将复杂度变为O(m + n)，相比要好很多~
 # 代码二
 
 ```
@@ -87,3 +87,5 @@ var nextGreaterElement = function(findNums, nums) {
     return findNums;
 };
 ```
+# 总结
+- 涉及到数组中的**顺序**，**比较**等问题类型时，尝试用栈的数据结构，也许会有意外的收获~
