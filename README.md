@@ -6,6 +6,9 @@ LeetCode Solutions (All By JavaScript!)
 
 > 其他：做笔记备份的目的是方便以后复习和再学习，同时也看看以前写的算法是有多么傻x:shit:
 
+#### [LeetCode地址](https://leetcode.com)
+#### [戳我访问LeetCode中文](https://leetcode-cn.com)
+
 ## 基本格式
 0. 问题链接
 ……
