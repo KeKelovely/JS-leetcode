@@ -3,6 +3,9 @@ LeetCode Solutions (All By JavaScript!)
 > [LeetCode](https://leetcode.com/)的个人Solutions汇总，全部使用JavaScript完成:satisfied:
 
 > 目的：了解、掌握数据结构和算法，当然更重要的是学会如何用JS实现（如JS中的Hash Table、BST等），和JS结下更深的友谊:clap:
+
+> 其他：做笔记备份的目的是方便以后复习和再学习，同时也看看以前写的算法是有多么傻x:shit:
+
 ## 基本格式
 0. 问题链接
 ……
