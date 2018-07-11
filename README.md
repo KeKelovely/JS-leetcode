@@ -9,7 +9,7 @@ LeetCode Solutions (All By JavaScript!)
 #### [LeetCode地址](https://leetcode.com)
 #### 如需中文,可=>[戳我访问LeetCode中文](https://leetcode-cn.com)
 
-## 基本格式
+## 一、基本格式
 0. 问题链接
 ……
 1. 问题描述
@@ -23,7 +23,51 @@ LeetCode Solutions (All By JavaScript!)
 4. 运行时间
 ……
 
-## Example
+## 二、Index目录引导
+
+> 其中数字表示题目的顺序编号
+
+### 1.运算基础（数字的基本运算、简单的求和等）
+- 01 Two Sum ：两数之和
+- 07 Reverse Integer：翻转整数
+- 09 Palindrome Number：回文数
+- 11 Container With Most Water：双指针搜索的典型例子
+- 12 Integer to Roman： 将阿拉伯数字转换为罗马数字
+- 38 Count and Say：计算并递归
+- 53 Maximum Subarray: 求子数组的元素和的最大值，是分冶法的一个经典应用（Divide And Conquer）
+- 70 Climbing Stairs：一个斐波那契数列的递归实现
+
+### 2.数据结构（数组、链表、栈、队列）
+- 02 Add Two Numbers：用链表实现两数求和
+- 04 Median of Two Sorted Arrays：在两个已排序的数组间求中间值
+- 20 Valid Parentheses：符号配对问题，本题虽然涉及到字符串，但实际上是用栈解决问题的经典例子
+- 21 Merge Two Sorted Lists：合并两个已排序的链表
+- 24 Swap Nodes in Pairs：交换链表中的一对节点
+- 26 Remove Duplicates from Sorted Array：去掉已排序的数组中的重复元素，用双指针解决
+- 27 Remove Element：去掉数组中指定的元素，用双指针解决
+- 35 Search Insert Position：找到元素的插入位置，是Binary Search的典型应用
+- 66 Plus One：链表运算
+- 83 Remove Duplicates from Sorted List：去除链表中的重复元素
+- 88 Merge Sorted Array：合并有序数组
+
+
+### 3.字符串问题（回文字符串、子字符串等）
+- 03 Longest Substring Without Repeating Characters：不含重复字符的最长子字符串
+- 14 Longest Common Prefix：最长公共子序列问题
+- 22 Generate Parentheses：输出所有可能的括号“配对”结果，考查带条件的搜索
+- 28 Implement strStr：找出某个字符在字符串中第一次出现的位置，如果不用indexOf应如何实现
+- 58 Length of Last Word： 最后一个单词的长度，考查对字符串的遍历
+
+### 4.树问题（二叉树、二叉搜索树等）
+
+### 5.高级算法（如动态规划等）
+- 46 Permutations：全排列问题
+- 47 Permutations：全排列问题2，考虑重复数字的情形
+
+### 6.数学问题（如矩阵等）
+- 48 Rotate Image：矩阵的旋转变换
+
+## 三、一个栗子
 ---
 
 # 2 Add Two Numbers
